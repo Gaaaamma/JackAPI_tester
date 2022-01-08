@@ -5,7 +5,7 @@ fi
 
 
 echo "============= RESULT =============="
-curl -X GET http://140.113.170.152:8080/users/"$1" -H "Accept: application/json" | jq . > userAIModel.json
+curl -s -X GET http://140.113.170.152:8080/users/"$1" -H "Accept: application/json" | jq . > userAIModel.json
 
 printf "MI_ON: "
 jq .MI_ON userAIModel.json
