@@ -1,5 +1,5 @@
 if [ $# -ne 3 ] ; then
-	echo "Usage: $0 {userId :int} {setState&setRef :(y/n)} {setDetect :(y/n)}"
+	echo "Usage: $0 {userId} {setState&setRef :(y/n)} {setDetect :(y/n)}"
 	exit
 fi
 
