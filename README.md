@@ -1,6 +1,8 @@
 # JackAPI_tester
 Used to test JackAPI<br>
-requirement: curl, jq<br> 
+
+## Dependencies
+curl, jq<br> 
 
 ## showAIResult.sh
 Used to show AI Result.<br>
