@@ -1,3 +1,6 @@
+GPUHOST="http://140.113.170.152:32777"
+USERRESULT="$GPUHOST/users/$1"
+
 if [ $# -eq 0 ] ; then
 	echo "Usage: $0 {userId}"
 	exit
@@ -5,7 +8,7 @@ fi
 
 
 echo "============= RESULT =============="
-curl -s -X GET http://140.113.170.152:8080/users/"$1" -H "Accept: application/json" | jq . > userAIModel.json
+curl -s -X GET $USERRESULT -H "Accept: application/json" | jq . > userAIModel.json
 
 printf "MI_ON: "
 jq .MI_ON userAIModel.json
